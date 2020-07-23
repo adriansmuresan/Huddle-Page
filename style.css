@@ -48,11 +48,18 @@ header {
 
 .align-start {
   align-items: flex-start;
+  margin-top: 40px;
 }
 
 .flex > div {
   flex: 1;
   align-items: center;
+}
+
+footer .social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 nav {
@@ -111,7 +118,6 @@ footer * {
 
 footer ul {
   list-style-type: none;
-  padding: 0;
 }
 
 footer ul li {
@@ -138,4 +144,40 @@ footer .social {
 footer p {
   text-align: right;
   font-size: 10px;
+}
+
+footer div ul li a img {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+
+  nav.flex {
+    flex-direction: row;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .flex-mobile-reverse {
+    flex-direction: column-reverse;
+  }
+
+  footer ul {
+    width: 100%;
+    padding: 0;
+  }
+
+  footer p {
+    text-align: center;
+  }
+
+  header .header-image {
+    margin-top: 40px;
+  }
+
 }
